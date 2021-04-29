@@ -30,8 +30,8 @@
                 <aside>
                     <section class="contact">
                         <h6>Contact</h6>
-                        <ul>
-                            <li>
+                        <ul id = "cont">
+                            <!-- <li>
                                 <p><i class="fa fa-map-marker-alt" title="Location"></i> San Francisco, CA</p>
                             </li>
                             <li>
@@ -45,7 +45,7 @@
                             </li>
                             <li>
                                 <p><i class="fab fa-github" title="GitHub"></i> <a href="https://github.com/Tombarr">github.com/Tombarr</a></p>
-                            </li>
+                            </li> -->
                         </ul>
                     </section>
                     <section class="skills">
@@ -60,16 +60,16 @@
                     </section>
                     <section class="skills">
                         <h6>Technologies</h6>
-                        <ul>
-                            <li><span>JavaScript</span></li>
+                        <ul id = "tech">
+                            <!-- <li><span>JavaScript</span></li>
                             <li><span>PHP</span></li>
                             <li><span>HTML5</span></li>
                             <li><span>CSS3</span></li>
                             <li><span>Bootstrap</span></li>
-                            <li><span>React</span></li>
+                            <li><span>React</span></li> -->
                         </ul>
                     </section>
-                    <section class="references">
+                    <!-- <section class="references">
                         <h6>References</h6>
                         <address>
                             Jane Doe<br />
@@ -85,7 +85,7 @@
                         </address>
                         <p>Typeset in HTML &amp; CSS<br />
                         See <a href="https://git.io/f4dXp">git.io/f4dXp</a></p>
-                    </section>
+                    </section> -->
                 </aside>
                 <section>
                     <header class="name" aria-label="Joe Smith">
@@ -111,8 +111,8 @@
                         </section>
                         <section class="experience">
                             <h6>Experience</h6>
-                            <ol>
-                                <li>
+                            <ol id = "exps">
+                                <!-- <li>
                                     <header>
                                         <p class="sanserif">Senior Software Engineer</p>
                                         <time>2016 – Present</time>
@@ -124,6 +124,8 @@
                                         <li>Leveraged Waymo datasets to double traffic statistics accuracy</li>
                                     </ul>
                                 </li>
+
+
                                 <li>
                                     <header>
                                         <p class="sanserif">Software Engineer</p>
@@ -135,8 +137,8 @@
                                         <li>Authored user stories and mapped user journeys</li>
                                         <li>Introduced regression testing to Yoga layout framework</li>
                                     </ul>
-                                </li>
-                                <li>
+                                </li> -->
+                                <!-- <li>
                                     <header>
                                         <p class="sanserif">Software Engineer Intern</p>
                                         <time>2013 – 2014</time>
@@ -157,13 +159,13 @@
                                         <li>Developed SuperUltraCoolWeather app using AccuWeather API</li>
                                         <li>Shipped products to more than 1,000,000 daily active users</li>
                                     </ul>
-                                </li>
+                                </li> -->
                             </ol>
                         </section>
                         <section class="education">
                             <h6>Education</h6>
-                            <ol>
-                                <li>
+                            <ol id = "educ">
+                                <!-- <li>
                                     <div>
                                         <p class="sanserif">M.S., Human Computer Interaction</p>
                                         <time>Sept '12 – May '14</time>
@@ -182,7 +184,7 @@
                                         <span>Harvard University</span>
                                         <span>GPA: 3.91</span>
                                     </div>
-                                </li>
+                                </li> -->
                             </ol>
                         </section>
                     </section>
@@ -190,7 +192,244 @@
             </section>
         </section>
         <!-- Script to make elements authorable and save changes to localStorage -->
-        <script type="text/javascript" src="./index.js"></script>
+        <!-- <script type="text/javascript" src="./index.js"></script> -->
+        <script>
+            var cont = document.getElementById('cont');
+            var sample0 = {
+                "location": "Berkeley, CA",
+                "phone": "(415) 323-4000",
+                "email": "oski@berkeley.edu",
+                "site": "joesmith.site",
+                "github": "github.com/Tombarr"
+            };
+            // var obj = JSON.parse(sample);
+            const contLi1 = document.createElement('li');
+            const contLi2 = document.createElement('li');
+            const contLi3 = document.createElement('li');
+            const contLi4 = document.createElement('li');
+            const contLi5 = document.createElement('li');
+            const contPara1 = document.createElement('p');
+            const contPara2 = document.createElement('p');
+            const contPara3 = document.createElement('p');
+            const contPara4 = document.createElement('p');
+            const contPara5 = document.createElement('p');
+            const conti1 = document.createElement('i');
+            const conti2 = document.createElement('i');
+            const conti3 = document.createElement('i');
+            const conti4 = document.createElement('i');
+            const conti5 = document.createElement('i');
+
+            conti1.classList.add("fa fa-map-marker-alt");
+            conti1.title = "Location";
+            conti2.classList.add("fa fa-phone");
+            conti2.title = "Cell phone";
+            conti3.classList.add("fa fa-envelope");
+            conti3.title = "Email";
+            conti4.classList.add("fa fa-globe-americas");
+            conti4.title = "Website";
+            conti5.classList.add("fa fa-github");
+            conti5.title = "Github";
+
+            contPara1.appendChild(conti1);
+            contPara2.appendChild(conti2);
+            contPara3.appendChild(conti3);
+            contPara4.appendChild(conti4);
+            contPara5.appendChild(conti5);
+            
+
+            contPara1.textContent = sample0.location;
+            contPara2.textContent = sample0.phone;
+            contPara3.textContent = sample0.email;
+            contPara4.textContent = sample0.site;
+            contPara5.textContent = sample0.github;
+
+            contLi1.appendChild(contPara1);
+            contLi2.appendChild(contPara2);
+            contLi3.appendChild(contPara3);
+            contLi4.appendChild(contPara4);
+            contLi5.appendChild(contPara5);
+
+            cont.appendChild(contLi1);
+            cont.appendChild(contLi2);
+            cont.appendChild(contLi3);
+            cont.appendChild(contLi4);
+            cont.appendChild(contLi5);
+        </script>
+        <script>
+            var educ = document.getElementById('educ');
+            var sample2 = {
+                "schools": [{
+                    "degree": "M.S.",
+                    "major": "Human Computer Interaction",
+                    "school": "Massachusetts Institute of Technology",
+                    "from": "09/2012",
+                    "to": "08/2020",
+                    "gpa": "4.00"
+                },
+                    {
+                        "degree": "B.S.",
+                        "major": "Computer Science",
+                        "school": "Harvard University",
+                        "from": "09/2008",
+                        "to": "05/2012",
+                        "gpa": "3.91"
+                    }]
+            };
+            // var obj = JSON.parse(sample);
+            const schools  = sample2.schools;
+            for (let i = 0; i < schools.length; i++) {
+                console.log(i);
+                const thisSkl = schools[i];
+                const expLi = document.createElement('li');
+                const expDiv1 = document.createElement('div');
+                const expPara1 = document.createElement('p');
+                const expTime = document.createElement('time');
+                const expDiv2 = document.createElement('div');
+                const expSpan1 = document.createElement('span');
+                const expSpan2 = document.createElement('span');
+
+                expPara1.className = "sanserif";
+                expPara1.textContent = thisSkl.degree + ", " + thisSkl.major;
+                expTime.textContent = thisSkl.from + " – " + thisSkl.to;
+                expDiv1.appendChild(expPara1);
+                expDiv1.appendChild(expTime);
+
+                expSpan1.textContent = thisSkl.school;
+                expSpan2.textContent = "GPA: " + thisSkl.gpa;
+                expDiv2.appendChild(expSpan1);
+                expDiv2.appendChild(expSpan2);
+
+                expLi.appendChild(expDiv1);
+                expLi.appendChild(expDiv2);
+                educ.appendChild(expLi);
+            }
+        </script>
+        <script>
+            var exps = document.getElementById('exps');
+            var sample = {
+                "positions": [{
+                    "company": "Google",
+                    "position": "Software Engineering Internship",
+                    "from": "02/2020",
+                    "to": "08/2020",
+                    "description": [
+                        "asascasc",
+                        "Ascasca",
+                        "Acasdac",
+                        "asdcasc"
+                    ]
+                },
+                {
+                    "company": "Facebook",
+                    "position": "Software Engineering",
+                    "from": "04/2021",
+                    "to": "08/2021",
+                    "description": [
+                        "asascasc",
+                        "Ascasca",
+                        "Acasdac",
+                        "asdcasc"
+                    ]
+                }]
+            };
+            // var obj = JSON.parse(sample);
+            const positions = sample.positions;
+            for (let i = 0; i < positions.length; i++) {
+                console.log(i);
+                const thisPos = positions[i];
+                const expLi = document.createElement('li');
+                const expHeader = document.createElement('header');
+                const expPara1 = document.createElement('p');
+                const expTime = document.createElement('time');
+                const expSpan = document.createElement('span');
+                const expUl = document.createElement('ul');
+
+                expPara1.className = "sanserif";
+                expPara1.textContent = thisPos.position;
+                expTime.textContent = thisPos.from + " – " + thisPos.to;
+                expHeader.appendChild(expPara1);
+                expHeader.appendChild(expTime);
+
+                expSpan.textContent = thisPos.company;
+
+                const desc = thisPos.description;
+                for (let j = 0; j < desc.length; j++) {
+                    const expDescLi = document.createElement('li');
+                    expDescLi.textContent = desc[j];
+                    expUl.appendChild(expDescLi);
+                }
+
+                expLi.appendChild(expHeader);
+                expLi.appendChild(expSpan);
+                expLi.appendChild(expUl);
+                exps.appendChild(expLi);
+            }
+        </script>
+        <script>
+            var educ = document.getElementById('educ');
+            var sample2 = {
+                "schools": [{
+                    "degree": "M.S.",
+                    "major": "Human Computer Interaction",
+                    "school": "Massachusetts Institute of Technology",
+                    "from": "09/2012",
+                    "to": "08/2020",
+                    "gpa": "4.00"
+                },
+                    {
+                        "degree": "B.S.",
+                        "major": "Computer Science",
+                        "school": "Harvard University",
+                        "from": "09/2008",
+                        "to": "05/2012",
+                        "gpa": "3.91"
+                    }]
+            };
+            // var obj = JSON.parse(sample);
+            const schools  = sample2.schools;
+            for (let i = 0; i < schools.length; i++) {
+                console.log(i);
+                const thisSkl = schools[i];
+                const expLi = document.createElement('li');
+                const expDiv1 = document.createElement('div');
+                const expPara1 = document.createElement('p');
+                const expTime = document.createElement('time');
+                const expDiv2 = document.createElement('div');
+                const expSpan1 = document.createElement('span');
+                const expSpan2 = document.createElement('span');
+
+                expPara1.className = "sanserif";
+                expPara1.textContent = thisSkl.degree + ", " + thisSkl.major;
+                expTime.textContent = thisSkl.from + " – " + thisSkl.to;
+                expDiv1.appendChild(expPara1);
+                expDiv1.appendChild(expTime);
+
+                expSpan1.textContent = thisSkl.school;
+                expSpan2.textContent = "GPA: " + thisSkl.gpa;
+                expDiv2.appendChild(expSpan1);
+                expDiv2.appendChild(expSpan2);
+
+                expLi.appendChild(expDiv1);
+                expLi.appendChild(expDiv2);
+                educ.appendChild(expLi);
+            }
+        </script>
+        <script>
+            var tech = document.getElementById('tech');
+            var sample3 = {
+                "technologies": ["JavaScript", "PHP", "HTML5", "CSS3", "Bootstrap", "React"]
+            };
+            // var obj = JSON.parse(sample);
+            const techList = sample3.technologies;
+            for (let i = 0; i < techList.length; i++) {
+                const thisTech = techList[i];
+                const techLi = document.createElement('li');
+                const techSpan = document.createElement('span');
+                techSpan.textContent = thisTech;
+                techLi.appendChild(techSpan);
+                tech.appendChild(techLi);
+            }
+        </script>
     </body>
     <!-- Developed by Tom Barrasso. https://barrasso.me -->
 </html>
