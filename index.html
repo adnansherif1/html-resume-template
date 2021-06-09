@@ -21,7 +21,7 @@
         <link rel="stylesheet" type="text/css" href="./typography.css" />
         <link rel="stylesheet" type="text/css" media="screen" href="./screen.css" />
         <link rel="stylesheet" type="text/css" media="print" href="./print.css" />
-        <script async defer src="https://buttons.github.io/buttons.js"></script>
+        <!-- <script async defer src="https://buttons.github.io/buttons.js"></script> -->
         <title>HTML Resume Template</title>
     </head>
     <body class="letter">
@@ -35,7 +35,7 @@
                                 <p><i class="fa fa-map-marker-alt" title="Location"></i> San Francisco, CA</p>
                             </li>
                             <li>
-                                <p><i class="fa fa-phone" title="Cell phone"></i> <a href="tel:4153234000">(415) 323-4000</a></p>
+                                <p><i title="Cell phone"> (415) 323-4000 </i> </p>
                             </li>
                             <li>
                                 <p><i class="fa fa-envelope" title="Email"></i> <a href="mailto:joe@joesmith.site">joe@joesmith.site</a></p>
@@ -45,7 +45,7 @@
                             </li>
                             <li>
                                 <p><i class="fab fa-github" title="GitHub"></i> <a href="https://github.com/Tombarr">github.com/Tombarr</a></p>
-                            </li> -->
+                            </li>  -->
                         </ul>
                     </section>
                     <section class="skills">
@@ -104,11 +104,11 @@
                         <hr />
                     </header>
                     <section>
-                        <section class="summary">
+                        <!-- <section class="summary">
                             <h6>Summary</h6>
                             <p>Deadline-oriented software engineer with lots of experience.
                                 Solid track record of architecting solutions that exceed client expectations.</p>
-                        </section>
+                        </section> -->
                         <section class="experience">
                             <h6>Experience</h6>
                             <ol id = "exps">
@@ -219,15 +219,15 @@
             const conti4 = document.createElement('i');
             const conti5 = document.createElement('i');
 
-            conti1.classList.add("fa fa-map-marker-alt");
+            // conti1.classList.add("fa fa-map-marker-alt");
             conti1.title = "Location";
-            conti2.classList.add("fa fa-phone");
+            // conti2.classList.add("fa fa-phone");
             conti2.title = "Cell phone";
-            conti3.classList.add("fa fa-envelope");
+            // conti3.classList.add("fa fa-envelope");
             conti3.title = "Email";
-            conti4.classList.add("fa fa-globe-americas");
+            // conti4.classList.add("fa fa-globe-americas");
             conti4.title = "Website";
-            conti5.classList.add("fa fa-github");
+            // conti5.classList.add("fa fa-github");
             conti5.title = "Github";
 
             contPara1.appendChild(conti1);
@@ -235,7 +235,7 @@
             contPara3.appendChild(conti3);
             contPara4.appendChild(conti4);
             contPara5.appendChild(conti5);
-            
+        
 
             contPara1.textContent = sample0.location;
             contPara2.textContent = sample0.phone;
@@ -430,6 +430,7 @@
                 tech.appendChild(techLi);
             }
         </script>
+        <script async defer src="https://buttons.github.io/buttons.js"></script>
     </body>
     <!-- Developed by Tom Barrasso. https://barrasso.me -->
 </html>
