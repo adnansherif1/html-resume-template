@@ -27,9 +27,23 @@
     <body class="letter">
         <section id="save">
             <section class="sheet">
-                <aside>
-                    <section class="contact">
-                        <h6>Contact</h6>
+                <section>
+                    <header class="name" aria-label="Joe Smith">
+                        <!-- <a href="https://joesmith.site"> -->
+                            <!-- <svg width="500" height="35px" viewBox="0 0 500 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-family="Montserrat-Regular, Montserrat" font-size="48" font-weight="normal">
+                                    <g id="Letter" transform="translate(-54.000000, -140.000000)" fill="#484848">
+                                        <text id="JOE-SMITH">
+                                            <tspan x="54.728" y="174">JOE SMITH dfadfadfgsdfg</tspan>
+                                        </text>
+                                    </g>
+                                </g>
+                            </svg> -->
+                        <!-- </a> -->
+                        <!-- <h6>Software Engineer Extraordinaire</h6> -->
+                        <div id = "fullname">  
+
+                        </div>
                         <ul id = "cont">
                             <!-- <li>
                                 <p><i class="fa fa-map-marker-alt" title="Location"></i> San Francisco, CA</p>
@@ -47,9 +61,43 @@
                                 <p><i class="fab fa-github" title="GitHub"></i> <a href="https://github.com/Tombarr">github.com/Tombarr</a></p>
                             </li>  -->
                         </ul>
-                    </section>
+                        <hr />
+                    </header>
+                    
+                    <!-- <section class="contact">
+                        <h6>Contact</h6>
+                        
+                    </section> -->
+                    <section class="education">
+                            <h6>Education</h6>
+                            <ol id = "educ">
+                                <!-- <li>
+                                    <div>
+                                        <p class="sanserif">M.S., Human Computer Interaction</p>
+                                        <time>Sept '12 – May '14</time>
+                                    </div>
+                                    <div>
+                                        <span>Massachusetts Institute of Technology</span>
+                                        <span></span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <p class="sanserif">B.S., Computer Science</p>
+                                        <time>Sept '08 – May '12</time>
+                                    </div>
+                                    <div>
+                                        <span>Harvard University</span>
+                                        <span>GPA: 3.91</span>
+                                    </div>
+                                </li> -->
+                            </ol>
+                            <!-- <hr /> --> 
+                            <!-- HORIZONTAL LINE NOT WORKING ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ -->
+                        </section>
+
                     <section class="skills">
-                        <h6>Skills</h6>
+                        <h6>Relevant Courses</h6>
                         <ul>
                             <li><span>Responsive Design</span></li>
                             <li><span>Mobile Development</span></li>
@@ -59,7 +107,7 @@
                         </ul>
                     </section>
                     <section class="skills">
-                        <h6>Technologies</h6>
+                        <h6>Skills</h6>
                         <ul id = "tech">
                             <!-- <li><span>JavaScript</span></li>
                             <li><span>PHP</span></li>
@@ -86,23 +134,7 @@
                         <p>Typeset in HTML &amp; CSS<br />
                         See <a href="https://git.io/f4dXp">git.io/f4dXp</a></p>
                     </section> -->
-                </aside>
-                <section>
-                    <header class="name" aria-label="Joe Smith">
-                        <a href="https://joesmith.site">
-                            <svg width="257px" height="35px" viewBox="0 0 257 35" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-                                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" font-family="Montserrat-Regular, Montserrat" font-size="48" font-weight="normal">
-                                    <g id="Letter" transform="translate(-54.000000, -140.000000)" fill="#484848">
-                                        <text id="JOE-SMITH">
-                                            <tspan x="54.728" y="174">JOE SMITH</tspan>
-                                        </text>
-                                    </g>
-                                </g>
-                            </svg>
-                        </a>
-                        <h6>Software Engineer Extraordinaire</h6>
-                        <hr />
-                    </header>
+
                     <section>
                         <!-- <section class="summary">
                             <h6>Summary</h6>
@@ -162,38 +194,36 @@
                                 </li> -->
                             </ol>
                         </section>
-                        <section class="education">
-                            <h6>Education</h6>
-                            <ol id = "educ">
-                                <!-- <li>
-                                    <div>
-                                        <p class="sanserif">M.S., Human Computer Interaction</p>
-                                        <time>Sept '12 – May '14</time>
-                                    </div>
-                                    <div>
-                                        <span>Massachusetts Institute of Technology</span>
-                                        <span></span>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div>
-                                        <p class="sanserif">B.S., Computer Science</p>
-                                        <time>Sept '08 – May '12</time>
-                                    </div>
-                                    <div>
-                                        <span>Harvard University</span>
-                                        <span>GPA: 3.91</span>
-                                    </div>
-                                </li> -->
-                            </ol>
-                        </section>
+                        
                     </section>
                 </section>
             </section>
         </section>
         <!-- Script to make elements authorable and save changes to localStorage -->
         <!-- <script type="text/javascript" src="./index.js"></script> -->
+        <!-- <script>
+            var name = document.getElementById('fullname');
+            var sample4 = {
+                "firstname": "joe",
+                "lastname": "smith"
+            };
+            // name.innerHTML = sample4.firstname + " " + sample4.lastname;
+            const namediv = document.createElement('div');
+            const conti = document.createElement('i');
+            namediv.appendChild(conti);
+            namediv.innerHTML = sample4.firstname + " " + sample4.lastname;
+            name.appendChild(namediv);
+
+        </script> -->
         <script>
+
+            // var name = document.getElementById('fullname');
+            var sample4 = {
+                "firstname": "Joe",
+                "lastname": "Smith"
+            };
+            // name.textContent = sample4.firstname + " " + sample4.lastname;
+
             var cont = document.getElementById('cont');
             var sample0 = {
                 "location": "Berkeley, CA",
@@ -205,55 +235,56 @@
             // var obj = JSON.parse(sample);
             const contLi1 = document.createElement('li');
             const contLi2 = document.createElement('li');
-            const contLi3 = document.createElement('li');
-            const contLi4 = document.createElement('li');
-            const contLi5 = document.createElement('li');
+            // const contLi3 = document.createElement('li');
+            // const contLi4 = document.createElement('li');
+            // const contLi5 = document.createElement('li');
             const contPara1 = document.createElement('p');
             const contPara2 = document.createElement('p');
-            const contPara3 = document.createElement('p');
-            const contPara4 = document.createElement('p');
-            const contPara5 = document.createElement('p');
+            // const contPara3 = document.createElement('p');
+            // const contPara4 = document.createElement('p');
+            // const contPara5 = document.createElement('p');
             const conti1 = document.createElement('i');
             const conti2 = document.createElement('i');
-            const conti3 = document.createElement('i');
-            const conti4 = document.createElement('i');
-            const conti5 = document.createElement('i');
+            // const conti3 = document.createElement('i');
+            // const conti4 = document.createElement('i');
+            // const conti5 = document.createElement('i');
 
-            // conti1.classList.add("fa fa-map-marker-alt");
-            conti1.title = "Location";
-            // conti2.classList.add("fa fa-phone");
-            conti2.title = "Cell phone";
-            // conti3.classList.add("fa fa-envelope");
-            conti3.title = "Email";
-            // conti4.classList.add("fa fa-globe-americas");
-            conti4.title = "Website";
-            // conti5.classList.add("fa fa-github");
-            conti5.title = "Github";
+            // // conti1.classList.add("fa fa-map-marker-alt");
+            // conti1.title = "Location";
+            // // conti2.classList.add("fa fa-phone");
+            // conti2.title = "Cell phone";
+            // // conti3.classList.add("fa fa-envelope");
+            // conti3.title = "Email";
+            // // conti4.classList.add("fa fa-globe-americas");
+            // conti4.title = "Website";
+            // // conti5.classList.add("fa fa-github");
+            // conti5.title = "Github";
 
             contPara1.appendChild(conti1);
             contPara2.appendChild(conti2);
-            contPara3.appendChild(conti3);
-            contPara4.appendChild(conti4);
-            contPara5.appendChild(conti5);
+            // contPara3.appendChild(conti3);
+            // contPara4.appendChild(conti4);
+            // contPara5.appendChild(conti5);
         
 
-            contPara1.textContent = sample0.location;
-            contPara2.textContent = sample0.phone;
-            contPara3.textContent = sample0.email;
-            contPara4.textContent = sample0.site;
-            contPara5.textContent = sample0.github;
+            contPara1.textContent = sample0.location + " | E: " + sample0.email + " | M: " + sample0.phone;
+            contPara2.textContent = sample4.firstname + " " + sample4.lastname;
+            // contPara3.textContent = sample0.email;
+            // contPara4.textContent = sample0.site;
+            // contPara5.textContent = sample0.github;
 
             contLi1.appendChild(contPara1);
             contLi2.appendChild(contPara2);
-            contLi3.appendChild(contPara3);
-            contLi4.appendChild(contPara4);
-            contLi5.appendChild(contPara5);
+            // contLi3.appendChild(contPara3);
+            // contLi4.appendChild(contPara4);
+            // contLi5.appendChild(contPara5);
 
-            cont.appendChild(contLi1);
             cont.appendChild(contLi2);
-            cont.appendChild(contLi3);
-            cont.appendChild(contLi4);
-            cont.appendChild(contLi5);
+            cont.appendChild(contLi1);
+            
+            // cont.appendChild(contLi3);
+            // cont.appendChild(contLi4);
+            // cont.appendChild(contLi5);
         </script>
         <script>
             var educ = document.getElementById('educ');
