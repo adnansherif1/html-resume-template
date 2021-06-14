@@ -73,6 +73,7 @@ function initPopup(){
         // cont.appendChild(contLi5);
     }); 
     chrome.storage.sync.get(["education"], function (res) {  
+        console.log(res);
         var educ = document.getElementById('educ');
         var sample2 = {
             "schools": [{
@@ -165,7 +166,7 @@ function initPopup(){
     expLi.appendChild(expPara1);
     skills.appendChild(expLi);
     chrome.storage.sync.get(["categories"], function (res) { 
-        console 
+        console.log(res);
         var sample = {
             "category1":{
                 "name":"Work Experience",
