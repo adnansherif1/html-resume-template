@@ -7,7 +7,9 @@
     transform-origin: 0px 0px 0px;
 }
 h1, h2, h3, h4, h5, h6 {
-    margin: 0 !important;
+    margin-bottom: 1em !important; 
+    margin-top: 0 !important;
+    /*  */
     padding: 0 !important;
     font-weight: bold !important; 
     }
@@ -31,6 +33,9 @@ hr {
     width: 99%;               
     background-color:#000000;
     height: 3px;
+    margin-top: 1em;
+    /*  */
+    /* margin-bottom: 1em; */
   }
 
 /* Page Variables */
